@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="425.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.ModifyPart">
+    <children>
+        <RadioButton fx:id="inHouse" layoutX="90.0" layoutY="39.0" mnemonicParsing="false" onAction="#radioBtnSelection" text="In House" />
+        <RadioButton fx:id="outSource" layoutX="215.0" layoutY="39.0" mnemonicParsing="false" onAction="#radioBtnSelection" text="Out sourced" />
+        <Label layoutX="69.0" layoutY="88.0" text="Id" />
+        <TextField fx:id="partId" layoutX="114.0" layoutY="83.0" />
+        <Label layoutX="48.0" layoutY="129.0" text="Name" />
+        <TextField fx:id="partName" layoutX="114.0" layoutY="124.0" />
+        <TextField fx:id="inventory" layoutX="114.0" layoutY="164.0" />
+        <TextField fx:id="partPrice" layoutX="114.0" layoutY="207.0" />
+        <TextField fx:id="partMax" layoutX="114.0" layoutY="248.0" />
+        <TextField fx:id="partMin" layoutX="114.0" layoutY="288.0" />
+        <Label layoutX="64.0" layoutY="169.0" text="INV" />
+        <Label layoutX="25.0" layoutY="212.0" text="Price/Cost" />
+        <Label layoutX="62.0" layoutY="253.0" text="Max" />
+        <Label layoutX="64.0" layoutY="293.0" text="Min" />
+        <Button layoutX="447.0" layoutY="373.0" mnemonicParsing="false" onAction="#savePart" text="Save" />
+        <Button layoutX="518.0" layoutY="373.0" mnemonicParsing="false" onAction="#cancelAddPart" text="Cancel" />
+        <Label fx:id="machineIdLabel" layoutX="23.0" layoutY="332.0" text="Machine ID" />
+        <TextField fx:id="machineId" layoutX="114.0" layoutY="327.0" />
+    </children>
+</AnchorPane>
